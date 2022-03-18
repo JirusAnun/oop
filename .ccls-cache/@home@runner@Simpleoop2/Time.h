@@ -48,12 +48,15 @@ void TIME::getTime (){
   int temp,sec;
   cout << "Input hours :";
   cin >> temp;
+  if(temp<0){ temp = 0; }
   sec = temp*3600;
   cout << "Input minutes:";
   cin >> temp;
+  if(temp<0){ temp = 0; }
   sec += temp*60;
   cout << "Input seconds :";
   cin >> temp;
+  if(temp<0){ temp = 0; }
   sec += temp;
 
   h = sec / 3600;
