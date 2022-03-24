@@ -59,6 +59,8 @@ void TIME::getTime (){
   if(temp<0){ temp = 0; }
   sec += temp;
 
+  if(sec>=86400){sec%=86400;}
+
   h = sec / 3600;
   sec = sec % 3600;
 
